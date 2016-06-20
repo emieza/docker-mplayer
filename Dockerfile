@@ -6,4 +6,5 @@ apt-get install -y mplayer && \
 apt-get clean && apt-get autoclean && \
 rm -rf /var/lib/apt/lists/*
 VOLUME ["musix:/vol1"]
+ENTRYPOINT ["/usr/bin/mplayer","$1"]
 
